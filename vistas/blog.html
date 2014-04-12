@@ -1,0 +1,25 @@
+{%extends "layout.html"%}/*heredando el contenido del padre*/
+
+{% block titulo%}<!--aqui estamos sobreescribiendo lo que tiene el bloque de titulo -->
+
+Blog
+
+{%endblock%}
+
+
+{%block contenido%}
+
+<h2>Blog</h2>
+<!-- tenemos que definir si el arreglo no esta vacio-->
+{%if posts.length == 0 %}
+<h3>No hay articulos aún</h3>
+{%endif%}
+
+<!-- agregamos un ciclo for que viene del servidor-->
+{% for post in posts%}<!-- aqui iteraremos el arreglo de post -->
+<!--por cada post en el arreglo haz lo siguiente -->
+<h3>{{post.titulo}}</h3>
+
+{%endfor%}
+
+{% endblock %}

@@ -1,0 +1,57 @@
+	{% extends "layout.html" %}<!-- aqui estamos herando de layout-->
+	
+	{% block titulo%}<!--aqui estamos sobreescribiendo lo que tiene el bloque de titulo -->
+
+	Inicio
+
+	{%endblock%}
+
+	
+	{% block contenido %}<!-- aqui estamos herando de layout-->
+	
+	<section id= "presentacion">
+		<h1>{{configuracion.saludo}}</h1>
+	</section>
+	
+	<section id="servicios">
+		<div class="servicio"><!--siempre que queramos dividir la pagina es div y section paradefinir una seccion en particular dela pagina-->
+			<img src = "./imagenes/movil.png" /><!--puede ser una ruta relativa que vive en el servidor-->
+			<h2>Móviles</h2><!-- H2 no tiene tanta importancia como H1-->
+		</div>
+		
+		<div class="servicio"><!--seunga columna-->
+			<img src = "./imagenes/seo.png" /><!--puede ser una ruta relativa que vive en el servidor-->
+			<h2>SEO</h2><!-- H2 no tiene tanta importancia como H1-->
+		</div>
+		
+		<div class="servicio"><!--3er columna-->
+			<img src = "./imagenes/compu.png" /><!--puede ser una ruta relativa que vive en el servidor-->
+			<h2>Diseño</h2><!-- H2 no tiene tanta importancia como H1-->
+		</div>
+		
+	</section>
+	
+	<section id="testimonios"><!--se agrega esto -->
+		<div class="testimonio">
+			<img src ="imagenes/testimonio.jpg" />
+			<p>
+				Excelente producto, mi vida es
+				mejor desde entonces :)
+			</p>
+		</div>
+		<div class="testimonio">
+			<video controls loop class="flexible"><!-- para agregar controles al video y una imagen antes que corra el video-->
+			<!--	<video controls loop poster="./imagenes/testimonio.jpg"><!-- para agregar controles al video y una imagen antes que corra el video-->
+				<source src="./videos/testimonio.webm" type="video/webm"/><!--ruta del video y tipo -->
+				<source src="./videos/testimonio.ogv" type="video/ogv"/>
+				<source src="./videos/testimonio.mp4" type="video/mp4"/>
+				Tu navegador no soporta video
+			</video>
+			
+		
+		</div>
+	</section>
+	{% endblock %}<!--queremos definir que ahi termina -->
+	
+	
+	

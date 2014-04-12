@@ -1,0 +1,48 @@
+{%extends "layout.html"%}/*heredando el contenido del padre*/
+
+{% block titulo%}<!--aqui estamos sobreescribiendo lo que tiene el bloque de titulo -->
+
+Contacto
+
+{%endblock%}
+
+
+{%block contenido%}
+
+<h2>Contactanos !!</h2>
+
+<form action= "/contactar"method="post"><!--en action definimos a dodne lo vamos a manar, en este caso en contactar -->
+			<h3>En que podemos ayudarte?</h3>
+			<div>						
+			<label for="Nombre">Nombre:</label>
+			<input type="text" name="nombre" required placeholder ="Tu nombre aquí"/><!-- parametro que sirve para mandarlo al servidor-->
+		    <!-- placeholder sugiere que se debe de ingresar en ese campo-->
+		   
+		    </div>
+		    
+		    <div>	
+		    <label for="Email">Email:</label>
+		    <input type="email" name="email"/><!--se cambia text por email y valida que sea un email -->
+		    </div>	
+		    
+		    <div>	
+		    <label for="Website">Website:</label>
+		    <input type="text" name="website"/>
+		    </div>
+		    
+		    <div>		
+		    <label for="Edad">Edad:</label>
+		    <input type="range" name="edad" min="18" max="70"/><!--se cambia text por nummber y aparece eun select list,
+		    	 range ssale una barra para escoger -->
+		    </div>
+		    
+		    <div>		
+		    <label for="Comentario" >Comentario:</label>
+		    <textarea name="comentario" required></textarea> <!-- -->
+		    </div>	
+		
+		
+		    <input type="submit" value="enviar" /> <!--es un boton para mandar -->	
+			</form>
+
+{% endblock %}

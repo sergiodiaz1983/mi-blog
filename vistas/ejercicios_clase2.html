@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head lang="es">
+		<meta charset="utf-8"/>
+		<title>JavaScript intro</title>
+		<script>
+			/*
+			 
+			 Ejercicio 1.
+
+Cree un programa q	ue le pida el nombre al usuario y que imprima su nombre 
+en pantalla usando document.write.
+*/
+				var nombre = prompt("escribe tu nombre");
+				document.write(nombre);
+				
+				
+					/*
+			 
+			 Ejercicio 2
+			 
+Cree una función que sirva para calcular el área de un círculo.  
+Use para el valor de PI la constante Math.PI (esta constante ya viene 
+	definida en JavaScript)
+
+			  */
+			
+			/*forma 2 de declarar funciones*/
+			var area = function(b)
+			{
+				var respuesta = Math.PI *( b*b);
+				return respuesta;
+			};
+			/*abajo se invoca*/
+			var calculo=area(10);
+			document.write(calculo);
+/*
+ El objetivo de este ejercicio es calcular el área de un círculo, 
+ el valor del radio se le pide previamente al usuario por medio del comando prompt. 
+ Debido a que prompt regresa texto es necesario convertirlo a un número por medio 
+ del comando parseFloat.
+
+El comando parseFloat permite recibir texto y convertirlo a números. Por ejemplo:
+
+//lo siguiente es un texto
+var texto = "16"; 
+//lo siguiente es un numero que se puede usar para hacer calculos.
+var numero =  parseFloat(texto);
+
+ * */
+
+		var area2 = function(b)
+			{
+				var respuesta = Math.PI *( b*b);
+				return respuesta;
+			};
+			/*abajo se invoca*/
+			var calculo = prompt("Escribe el radio para calcular el area del circulo");
+			var conversion = parseFloat(calculo);
+			var manda = area2(conversion);
+			document.write("<div>"+manda+"</div>");
+
+			
+	</script>
+	</head>
+	<body>
+
+	</body>
+</html>

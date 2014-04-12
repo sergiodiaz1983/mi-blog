@@ -1,0 +1,246 @@
+/*<style>/*loque estilo style*/
+
+/*------GENERALES---------*/
+.flexible
+{
+max-width:100%	
+}
+
+body/*decimos que todo el texto dentro de la etiqueta body tiene un ancho de 20 pixeles*/
+{
+font-size:18px;/*aqui se define el 1em*/
+
+/*font-family: 'Sofadi One';*/
+
+font-family: 'Sofadi One', cursive;
+}
+
+
+                /*---------ENCABEZADO--------*/ 		
+				header
+				{
+				/*2 digitos rojo
+				  2 digitos para verder
+				  2 digitos para azul
+				 */
+			/*	background-color:#FF0000;/*es para poner color de fondo*/
+								background-color:#e95644;/*es para poner color de fondo*/
+								
+								color:white;
+								/*color:#FFFF00*/
+							/*	background-color:rgba(255,0,0,0.5);/*intensisdad del rojo verde y azul y 
+								a significa de alpha channel que significa que si queremos que sea transparente*/
+				}
+		nav li/*seleccionas una etiqueta padre y hazlos que se apilen*/
+				{
+					display:inline-block;
+				}
+				
+				header h1
+				{
+				margin-top:0px;/*para quitar el margen arriba de la imagen del gato*/
+				margin-bottom:0em;
+					padding:1em;
+				}
+				
+				nav ul
+				{
+					margin-top:0em;/*quita el margen de abajo del header y arriba del gato*/
+					margin-bottom:0em; /*quita el margen de abajo del header y arriba del gato*/
+					
+				}
+					/*-------Presentacion----*/
+					#presentacion
+					{
+					background-image:url("../imagenes/portadas/portada4.jpg"); 
+					background-repeat:no-repeat;/*le dices que no se repita la imagen dentro un ancho grande*/
+					/**background-size:100% 100%;/*cambia el tamaño el 1ero es el anco y el segundo el alto*/
+					background-size:cover;
+					background-attachment:fixed;/*efecto paralax, la imagen queda fija y lo demas se mueve*/
+					color:white;
+					line-height:30em; /*el texto que aparece ahi tenga elmismo alto que la caja que lo contiene*/
+					text-align:center;
+					height: 30em;
+					}
+				#presentacion h1
+				{
+						margin-top:0em;
+					margin-bottom:0em;
+				}
+			/*-------Servicios----*/
+				#servicios
+				{
+					background-color: #f5f5f5;
+					padding:2em;
+					
+				}
+			.servicio /*propiedades de servicio que esta dentro de servicios*/
+				{
+					color:blue;
+			display:inline-block;/*hace que las cajas ocupen el espacio minimo necesario*/
+				text-align:center;
+				/*transform:scale(1.5);/*aplica una transformacion de css y scalse escala la caja en un valor de 1.5*/
+				transition: all 0.5s ease;
+				width:32%;/**/
+				}
+				
+				.servicio:hover
+				{
+				/*	transform:scale(1.5);*/
+				/*transform:rotate(180deg);/*hace que rote a imagen*/
+			/*	transform:rotatey(180deg);/*hace quese mueva como u na moneda*/
+				transform:translatey(-3em);
+				}
+			/*---testimonios-----*/
+				#testimonios
+				{
+					background-color: #454545;
+					color:white;
+				padding:2em;/*se le va a poner un relleno de 20 pixeles alrededor*/
+				/*padding-top:20px;/*da un relleno de 20 pixeles arriba */
+					
+				}
+				.testimonio
+				{
+					display:inline-block;/*hace que las cajas ocupen el espacio minimo necesario*/
+				vertical-align:top;
+				width:49.5%;/*alinear las cajas*/
+				}
+				
+				 /*---------ENCABEZADO--------*/ 		
+				footer
+				{
+				/*2 digitos rojo
+				  2 digitos para verder
+				  2 digitos para azul
+				 */
+			/*	background-color:#FF0000;/*es para poner color de fondo*/
+								background-color:rgb(52,52,52);/*es para poner color de fondo*/
+								/*border:3px solid #e95644;*/
+							border-top:3px solid #e95644;/*es para agregar linea en la parte de arriba nada mas*/
+								color:#FFFFFF;
+					
+							
+				}
+				
+				#suscribir
+				{
+					display:inline-block;
+					vertical-align:top;
+					width:30%;/**/
+				}
+				
+				#sociales
+				{
+					display:inline-block;
+							width:69%;/**/
+								
+				}
+				
+				#sociales img
+				{
+					/*transition: all 0.5s ease;*/
+					transition: all 0.5s ease; 
+				}
+				
+				#sociales img:hover/*es como poniendo un listener, esto es un pseudo selector de clase*/
+				{
+					transform:rotate(360deg);
+				}
+					
+				
+				
+				#suscribir-email
+				{
+					color:black;
+				/*la linea de abajo dice que la linea de transicion dure 1 segundo*/
+					/*transition:width 1s linear;*/
+					transition:all 1s linear;/*te dice que a todas las propiedades de transicion se van a cambiar */
+					width: 10em;
+				}
+				
+				#suscribir-email:focus
+				{
+					
+					width:13em;
+				}
+				
+				/*Seccion de contacto*/
+				
+				/*input:required/*required es una pseudio  classey los pone en todos los campos requiered*/
+			/*	{
+					background:url("/imagenes/correcto.png");
+					background-repeat: no-repeat;
+					background-size: 20px;
+					background-position: top right;
+			}*/
+				/*yo quiero que la paloma se vea cuando el tachecito se vea bien*/
+				
+				input:required:valid/*required es una pseudio  classey los pone en todos los campos requiered. Si es boligatorio y esta bien ponle palomita*/
+				{
+					background:url("/imagenes/correcto.png");
+					background-repeat: no-repeat;
+					background-size: 20px;
+					background-position: top right;
+				}
+				/**yo quiero que ahora aparezca un tache cuandono sean validos los campos/
+					input:invalid/*required es una pseudio  classey los pone en todos los campos requiered*/
+				input:invalid
+				{
+					background:url("/imagenes/incorrecto.png");
+					background-repeat: no-repeat;
+					background-size: 20px;
+					background-position: top right;
+				}
+			/*</style>*/
+			
+
+
+			/*</style>*/
+			
+/*definiedo el media query*/
+
+@media screen and (max-width:1100px)/*screen es para definir el media type, esto sera un screen para abarcar que se usara en todos los dispositivos posibles*/
+/*en el parenteiss tenemmos que definir algo que diga donde se rompe la pagina en lo ancho y lo distribuya a un 48%*/
+/*dentro de la llaves vemos las reglas que aplican*/
+{
+	#sociales,#suscribir
+	{
+		width:48%;
+	}
+}
+
+
+@media screen and (max-width:793px)/*screen es para definir el media type, esto sera un screen para abarcar que se usara en todos los dispositivos posibles*/
+/*en el parenteiss tenemmos que definir algo que defina donde se rompe la pagina en lo ancho, para mi seria 793X480*/
+/*dentro de la llaves vemos las reglas que aplican*/
+{
+	#sociales,#suscribir
+	{
+		text-align:center;
+		width:100%;
+	}
+}
+
+
+
+
+@media screen and (max-width:890px)/*screen es para definir el media type, esto sera un screen para abarcar que se usara en todos los dispositivos posibles*/
+/*en el parenteiss tenemmos que definir algo que defina donde se rompe la pagina en lo ancho, para mi seria 793X480*/
+/*dentro de la llaves vemos las reglas que aplican*/
+{
+	
+}
+
+
+@media screen and (max-width:883px)/*screen es para definir el media type, esto sera un screen para abarcar que se usara en todos los dispositivos posibles*/
+/*en el parenteiss tenemmos que definir algo que defina donde se rompe la pagina en lo ancho, para mi seria 793X480*/
+/*dentro de la llaves vemos las reglas que aplican*/
+{
+	.servicio
+		
+	{
+		text-align: center;
+		width:100%;
+	}
+}

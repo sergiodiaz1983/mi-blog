@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head lang="es">
+		<meta charset="utf-8"/>
+		<title>JavaScript intro</title>
+		<script>
+			/*etiqueta donde se efine el codigo de javascript*/
+			/*document.write("hola");/*definiendo una cadena*/
+			/*document.write("<h1>hola</h1>");
+			 /*document.write(5*3);/* para hacer operaciones no es necsario las comillas*/
+			/*document.write("<h1>"+5*3+"</h1>"); */
+
+			/*	 var saludo = "hola a todos(otra vez)";/*todas las variables se declaran como var y no son tipadas*/
+			/*
+			 var currentYear = 2014;
+			 document.write(currentYear);
+			 document.write(saludo);
+			 */
+			/*		 var nombre = prompt("escribe tu nombre");/*prompt me permite datos que vienen del usuario*/
+			/*
+			 document.write(nombre);
+			 */
+
+			/*Declarando funciones*/
+
+			/*foma uno de declarar funciones*/
+			function suma(a, b) 
+			{
+				var respuesta = a + b;
+				return respuesta;
+			}
+
+			/*var calculo=suma(1,3);
+			 document.write(calculo);*/
+
+			/*forma 2 de declarar funciones*/
+			var multi = function(a, b)/*la funcion no tiene nombre todavia*/ /*esto es una funcion anonima*/
+			{
+				var respuesta = a * b;
+				return respuesta;
+			};
+			/*abajo se invoca*/
+			/*var calculo=multi(1,3.5);
+			document.write(calculo);*/
+
+			/*forma 3 para declarar variables*/
+
+			//	function operacion(miFuncion) {
+			//	return miFuncion(5, 2);
+			//	}
+
+			function operacion(miFuncion, a, b) 
+			{
+				return miFuncion(a, b);
+			}
+
+			var calculo = operacion(suma,3,1);
+			/*invoca funciones*/
+			document.write(calculo);
+
+			var calculo = operacion(suma, 3, 1);
+			/*invoca funciones*/
+			document.write(calculo);
+
+			/*Ejercicio javascripts*/
+
+			//var pedir_nombre = prompt("escribe tu nombre");/*prompt me permite datos que vienen del usuario*/
+			//var domicilio= prompt("Domicilio");/*prompt me permite datos que vienen del usuario*/
+			//var telefono = prompt("Telefono");/*prompt me permite datos que vienen del usuario*/
+
+			/*
+			 document.write("<div>" + pedir_nombre + "</div>");
+			 document.write("<div>" + domicilio  + "</div>");
+			 document.write("<div>" + telefono +"</div>");
+			 */
+			/*temina ejercicio*/
+
+			/*Definiendo un objeto en jav script*/
+
+			var persona = //estamos declarando un obejto en javascript
+			{
+				nombre : "ismael",
+				edad : 27,
+				saludar : function() 
+				{
+					document.write("hola a todos");
+				}
+			};
+
+			document.write(persona.nombre);
+			/*se esta imprimiendo el nombre*/
+			persona.saludar();
+			/*lleva aprentesis*/
+
+			/*cuando  pnes una variable se pone person.curso*/
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
